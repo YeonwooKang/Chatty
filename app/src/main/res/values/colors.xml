@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2016 Google Inc. All Rights Reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+    <color name="primary">#4CAF50</color>
+    <color name="primary_dark">#000000</color>
+    <color name="accent">#536DFE</color>
+
+    <color name="status_hearing">#7B1FA2</color>
+    <color name="status_not_hearing">#757575</color>
+
+    <color name="accent_puple">#7a47fc</color>
+    <color name="accent_hotpink">#ed006d</color>
+    <color name="default_sky">#b2ebf4</color>
+    <color name="default_text">#5D5D5D</color>
+    <color name="default_text2">#FFFFFF</color>
+    <color name="accent_text">#C90000</color>
+
+    <!-- 최종 디자인 컬러칩 -->
+    <color name="default_navy">#34314c</color>
+    <color name="default_pink">#ff7473</color>
+    <color name="default_blue">#47b8e0</color>
+    <color name="default_yellow">#ffc952</color>
+    <color name="default_white">#ffffff</color>
+    <color name="default_grey">#787878</color>
+
+</resources>

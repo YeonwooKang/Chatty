@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/default_white"
+    tools:context="com.google.cloud.android.speech.GradeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/default_navy"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:text="나의 성적"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/default_grey"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:text="날짜 별 스트립트 연습 성적 기록을 확인할 수 있습니다."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/default_grey"
+            android:textAlignment="center"
+            android:id="@+id/doEX"
+            android:textSize="20dp"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/default_grey"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:text=" "/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#FDFDFD"
+            android:id="@+id/graph"
+            android:isScrollContainer="true"
+            />
+
+        <Button
+            android:id="@+id/exitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center|bottom"
+            android:text="뒤로 가기"
+            android:textSize="15dp"
+            android:textColor="@color/default_white"
+            android:background="@xml/bt_corner_pink"/>
+    </LinearLayout>
+
+
+</LinearLayout>

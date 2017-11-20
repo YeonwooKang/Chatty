@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/default_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/default_navy"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:text="단어장"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/default_grey"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:text="틀린 단어를 확인하고 개별적으로 연습할 수 있습니다."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/default_grey"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:text="스크립트를 선택하시고 '연습시작' 버튼을 눌러주세요!"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/allBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:text="모든 단어"
+                android:textSize="15dp"
+                android:textColor="@color/default_white"
+                android:background="@xml/bt_corner"/>
+
+            <Button
+                android:id="@+id/scriptBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:text="스크립트"
+                android:textSize="15dp"
+                android:textColor="@color/default_white"
+                android:background="@xml/bt_corner"/>
+
+            <Button
+                android:id="@+id/practiceBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:text="연습 시작"
+                android:textSize="15dp"
+                android:textColor="@color/default_white"
+                android:background="@xml/bt_corner_blue"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:background="#FDFDFD"
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="1">
+        </ListView>
+
+        <Button
+            android:id="@+id/exitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center|bottom"
+            android:text="뒤로 가기"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:textColor="@color/default_white"
+            android:background="@xml/bt_corner_pink"/>
+    </LinearLayout>
+
+
+</LinearLayout>

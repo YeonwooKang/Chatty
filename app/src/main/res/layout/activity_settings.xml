@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/default_white"
+    tools:context="com.google.cloud.android.speech.SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/default_navy"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:text="설정"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/default_grey"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:text="사용자 단어와 스크립트를 직접 추가할 수 있습니다."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/default_grey"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:text="사용자 단어는 단어장의 'custom' 목록에 저장됩니다!"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:hint="단어 입력"
+            android:id="@+id/editWord"
+            android:padding="5dp"
+            android:background="#FFEAEAEA"
+           />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="단어 추가"
+            android:id="@+id/BtnAddWord"
+            android:textColor="@color/default_white"
+            android:background="@xml/bt_corner"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:hint="스크립트 제목 입력"
+            android:id="@+id/editScriptTitle"
+            android:padding="5dp"
+            android:background="#FFEAEAEA"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="스크립트 추가"
+            android:id="@+id/BtnAddScript"
+            android:textColor="@color/default_white"
+            android:background="@xml/bt_corner"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editScriptContent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:hint="스크립트 내용 입력"
+        android:textSize="15dp"
+        android:padding="5dp"
+        android:background="#FFEAEAEA"
+        android:maxLines="40"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="뒤로 가기"
+        android:id="@+id/BtnClose"
+        android:textColor="@color/default_white"
+        android:background="@xml/bt_corner_pink" />
+
+    </LinearLayout>

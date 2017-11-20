@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center_vertical"
+    android:orientation="vertical"
+    tools:context="com.google.cloud.android.speech.SplashActivity">
+
+    <ImageView
+        android:id="@+id/splashImg"
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:background="@drawable/logo_sub"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/splashTxt"
+        android:text="한이음 공모전 덕성여대 CHATTY"
+        android:textColor="@color/default_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

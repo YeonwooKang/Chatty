@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    tools:context="com.google.cloud.android.speech.ChatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FDFDFD"
+            android:clickable="false"
+            android:divider="#00000000" />
+
+        <TextView
+            android:id="@+id/mtext"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:background="#999999"
+            android:text="버튼을 눌러 녹음을 시작하세요!"
+            android:textAlignment="center"
+            android:textColor="@color/default_text2"
+            android:textSize="13dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/default_text2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRecord"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btnrecord1"
+                android:text="10"
+                android:textColor="@color/default_text2"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/page2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77000000"
+        android:visibility="gone">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/page"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/default_navy"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:background="@color/default_navy"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Profile"
+                android:textColor="@color/default_blue"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/profileIv"
+                android:layout_width="140dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/default_white"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/userNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/default_text2"
+                android:text="Name"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/userIdTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/default_text2"
+                android:text="ID"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Menu"
+            android:textColor="@color/default_blue"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/menuIv"
+            android:layout_width="140dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/default_white"
+            android:clickable="false"/>
+
+        <Button
+            android:id="@+id/vocaBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="단어장"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/default_white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/scoreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="나의 성적"
+            android:textColor="@color/default_white"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/settingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="설정"
+            android:textColor="@color/default_white"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="로그아웃"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/default_pink"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</FrameLayout>
